@@ -9,7 +9,7 @@ from sklearn.features_extraction.text import TfidVectorizer
 from sklearn.metrics.pairwaise import cosine_similarity 
 
 #read the corpus file
-f = open("InterveiwBot.txt','r',errors=ignore') as fin
+f = open('InterveiwBot.txt','r',errors=ignore') as fin
     raw = f.read()
 	raw = raw.lower
 	nltk.download('pukt')
@@ -71,7 +71,7 @@ def LemToken(tokens):
    # line for the chatbot
    
    flag = True
-   print("ALEC: My name is Alec." )
+   print("ALEC: My name is Alec.")
    
    while(flag == true):
         user_response = user_response.lower()
