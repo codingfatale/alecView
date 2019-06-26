@@ -9,7 +9,7 @@ from sklearn.features_extraction.text import TfidVectorizer
 from sklearn.metrics.pairwaise import cosine_similarity 
 
 #read the corpus file
-f = open('InterveiwBot.txt','r',errors=ignore') as fin
+f = open('InterveiwBot.txt','r',errors= 'ignore')
     raw = f.read()
 	raw = raw.lower
 	nltk.download('pukt')
@@ -27,12 +27,9 @@ lemmer = nltk.stem.WordNetLemmatizer()
 
 def LemToken(tokens):
     return[lemmer.lemmatize(token) for token in tokens]
-	remove_punct_dict = dict((punct),None) for puct
-	in string.punctuation)
+	remove_punct_dict = dict((punct),None) for punct in string.punctuation)
 	def LemNormalize(text)
-	  return
-	  
-   LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
+	  return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
    
    GREET_INPUT =("hello")
    
@@ -48,7 +45,7 @@ def LemToken(tokens):
 	  return random.choice(GREET_RESPONSE)
 	  
 	  def response(user_response):
-	      bot_response = ' '
+	      bot_response = ''
 		  sent_tokens.append(user_response)
 		  
 	TfidVec = TfidVectorizer(tokenizer = LemNormalize, stop_words = 'english')
@@ -76,15 +73,15 @@ def LemToken(tokens):
    while(flag == true):
         user_response = user_response.lower()
 		if user_response != 'Good bye'):
-		if(user_response == 'Thank you' or == 'thanks fo your time'):
+		if(user_response == 'Thank you' or == 'thanks for your time'):
 		      flag = False
-	         print("ALEC: "You are welcome..")
+	         print("ALEC: You are welcome..")
 			 
 		else: 
-            print("ALEC: " , end " ")
+            print("ALEC: ", end= " ")
             print(response(user_response))
             sent_tokens.remove(user_response)
-			flag = Flase
-			print(ALEC:Good Bye.")
+			flag = False
+			print("ALEC:Good Bye.")
 			
 			
