@@ -16,7 +16,7 @@ nltk.download('popular',quiet =True)
 
 
 #read the corpus file
-with open('InterveiwBot.txt','r',errors= 'ignore') as fin
+with open('InterveiwBot.txt','r',errors= 'ignore') as fin:
 raw =fin.read().lower()
 	
 #convert to sentences
