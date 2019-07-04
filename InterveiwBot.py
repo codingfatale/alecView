@@ -1,33 +1,36 @@
 
 #import libraries 
 
-import nltk
+import io
 import numpy as np
 import random
 import string
-from sklearn.features_extraction.text import TfidVectorizer 
+from sklearn.feature_extraction.text import TfidVectorizer 
 from sklearn.metrics.pairwaise import cosine_similarity 
 
+import nltk
+from nltk.stem import WordNetLemmatizer
+nltk.download('popular',quiet =True)
+#nltk.download('pukt')
+#nltk.download('wordnet')
+
+
 #read the corpus file
-f = open('InterveiwBot.txt','r',errors= 'ignore')
-    raw = f.read()
-	raw = raw.lower
-	nltk.download('pukt')
-	nltk.download('wordnet')
+with open('InterveiwBot.txt','r',errors= 'ignore') as fin
+raw =fin.read().lower()
 	
+#convert to sentences
+sent_tokens = nltk.sent_tokenize(raw) 
 	
-	#convert to sentences
-	sent_tokens = nltk.sent_tokenize(raw) 
-	
-	# convert to list of words
-	word_tokens = nltk.word_tokenize(raw)
+# convert to list of words
+word_tokens = nltk.word_tokenize(raw)
 	
 	
 lemmer = nltk.stem.WordNetLemmatizer()
 
 def LemToken(tokens):
     return[lemmer.lemmatize(token) for token in tokens]
-	remove_punct_dict = dict((punct),None) for punct in string.punctuation)
+	remove_punct_dict = dict((ord(punct),None) for punct in string.punctuation)
 	def LemNormalize(text)
 	  return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
    
@@ -48,8 +51,8 @@ def LemToken(tokens):
 	      bot_response = ''
 		  sent_tokens.append(user_response)
 		  
-	TfidVec = TfidVectorizer(tokenizer = LemNormalize, stop_words = 'english')
-	tfidf =TfidVec.fit_transform(sent_tokens)
+	TfidfVec = TfidfVectorizer(tokenizer = LemNormalize, stop_words = 'english')
+	tfidf =TfidfVec.fit_transform(sent_tokens)
 	vals = cosine_similarity(tfidf[-1],tfidf)
 	idx = vals.flatten()
 	flat.sort()
@@ -73,7 +76,7 @@ def LemToken(tokens):
    while(flag == true):
         user_response = user_response.lower()
 		if user_response != 'Good bye'):
-		if(user_response == 'Thank you' or == 'thanks for your time'):
+		if(user_response == 'Thank you' or user_response == 'thanks for your time'):
 		      flag = False
 	         print("ALEC: You are welcome..")
 			 
@@ -81,7 +84,7 @@ def LemToken(tokens):
             print("ALEC: ", end= " ")
             print(response(user_response))
             sent_tokens.remove(user_response)
-			flag = False
-			print("ALEC:Good Bye.")
+		flag = False
+		print("ALEC:Good Bye.")
 			
 			
