@@ -5,7 +5,7 @@ import io
 import numpy as np
 import random
 import string
-from sklearn.feature_extraction.text import TfidVectorizer 
+from sklearn.feature_extraction.text import TfidfVectorizer 
 from sklearn.metrics.pairwaise import cosine_similarity 
 
 import nltk
@@ -16,7 +16,7 @@ nltk.download('popular',quiet =True)
 
 
 #read the corpus file
-with open('InterveiwBot.txt','r',errors= 'ignore') as fin:
+with open('InterveiwBot.txt','r',errors='ignore') as fin:
 raw =fin.read().lower()
 	
 #convert to sentences
@@ -69,22 +69,24 @@ def LemToken(tokens):
    return bot_response
    
    # line for the chatbot
-   
-   flag = True
-   print("ALEC: My name is Alec.")
-   
-   while(flag == true):
-        user_response = user_response.lower()
-		if user_response != 'Good bye'):
-		if(user_response == 'Thank you' or user_response == 'thanks for your time'):
-		      flag = False
-	         print("ALEC: You are welcome..")
-			 
-		else: 
-            print("ALEC: ", end= " ")
-            print(response(user_response))
-            sent_tokens.remove(user_response)
-		flag = False
-		print("ALEC:Good Bye.")
+ 
+flag = True
+print("ALEC: My name is Alec.")
+while(flag == true):
+    user_response = user_response.lower()
+if(user_response != 'Good bye'):
+   if(user_response == 'Thank you' or user_response == 'thanks for your time'):
+     flag = False
+     print("ALEC:You are welcome..")
+   else:
+     if(greet(user_response)!=None):
+       print("ALEC: " +greet(user_response))   
+else: 
+    print("ALEC: ",end=" ")
+    print(response(user_response))
+    sent_tokens.remove(user_response)
+
+    flag = False
+    print("ALEC:Good Bye.")	
 			
 			
