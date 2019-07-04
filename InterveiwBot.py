@@ -72,7 +72,7 @@ def LemToken(tokens):
  
 flag = True
 print("ALEC: My name is Alec.")
-while(flag == true):
+while(flag == True):
     user_response = user_response.lower()
 if(user_response != 'Good bye'):
    if(user_response == 'Thank you' or user_response == 'thanks for your time'):
