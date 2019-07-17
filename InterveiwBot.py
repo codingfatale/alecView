@@ -76,7 +76,7 @@ print("ALEC: My name is Alec.")
 while(flag == True):
     user_response = input()
     user_response = user_response.lower()
-if(user_response != 'Good bye'):
+if(user_response != 'good bye' or user_response != 'bye'):
    if(user_response == 'Thank you' or user_response == 'thanks for your time'):
      flag = False
      print("ALEC:You are welcome..")
