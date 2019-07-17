@@ -54,7 +54,8 @@ def LemTokens(tokens):
 	TfidfVec = TfidfVectorizer(tokenizer = LemNormalize, stop_words = 'english')
 	tfidf =TfidfVec.fit_transform(sent_tokens)
 	vals = cosine_similarity(tfidf[-1],tfidf)
-	idx = vals.flatten()
+	idx=vals.argsort()[0][-2]
+	flat = vals.flatten()
 	flat.sort()
 	req_tfidf = flat[-2]
 	
