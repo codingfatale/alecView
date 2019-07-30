@@ -34,7 +34,7 @@ def LemTokens(tokens):
 	def LemNormalize(text)
 	  return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
    
-   GREET_INPUT =("hello")
+   GREET_INPUT =("hello","hi","how are you?","how are you doing today?")
    
    GREET_RESPONSE =["hello","How are you?"]
    
