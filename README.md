@@ -1,11 +1,16 @@
-# chat-bots
-chatbot projects
-Chatbots that uses multiples libraries and packages
+## AlecVeiw 
 
-various other tools will be used to create more chatbots
+New to interviewing candiates for a job, AlecVeiw will help build skills to 
+interview canidates. 
 
-Bots:
-1)Interview Bot is designed to simulate a mock interview.
-Using NLTK (Natural Learning ToolKit package)
+AlecView is an application for employees who work in human resources and
+designed to simulate a mock interview. 
+
+
+## Tech
+Built with python using NLTK (Natural Learning ToolKit package). A text file for mining 
+data and training.
+
+
 
 
