@@ -1,6 +1,6 @@
-## AlecVeiw 
+## AlecView 
 
-New to interviewing candiates for a job, AlecVeiw will help build skills to 
+New to interviewing candiates for a job, AlecView will help build skills to 
 interview canidates. 
 
 AlecView is an application for employees who work in human resources and
