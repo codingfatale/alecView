@@ -1,4 +1,4 @@
-## AlecView 
+# AlecView 
 
 New to interviewing candiates for a job, AlecView will help build skills to 
 interview canidates. 
@@ -8,8 +8,11 @@ designed to simulate a mock interview.
 
 
 ## Tech
-Built with python using NLTK (Natural Learning ToolKit package). A text file for mining 
-data and training.
+Built with:
+* python - language used 
+* [chatterbot](https://github.com/gunthercox/ChatterBot) - open source python library
+*  custom yml files for training
+
 
 ## Sources
 Questions and Answers collected from various websites.
