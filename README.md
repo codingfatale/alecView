@@ -17,5 +17,9 @@ Built with:
 ## Sources
 Questions and Answers collected from various websites.
 * [Monster.com](https://www.monster.com/career-advice/article/top-10-interview-questions-prep)
+* [the balance careers](https://www.thebalancecareers.com/worst-interview-answers-2061232)
+
+
+
 
 
