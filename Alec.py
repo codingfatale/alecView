@@ -1,5 +1,4 @@
 from chatterbot import ChatBot
-from chatterbot.logic import logic_adapter
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
 bot = ChatBot('Alec',storage_adapter='chatterbot.storage.SQLStorageAdapter',           
