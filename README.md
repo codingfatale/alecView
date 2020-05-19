@@ -6,13 +6,14 @@ interview canidates.
 AlecView is an application for employees who work in human resources and
 designed to simulate a mock interview. 
 
-
 ## Tech
 Built with:
 * python - language used 
 * [chatterbot](https://github.com/gunthercox/ChatterBot) - open source python library
 *  custom yml files for training
 
+## Contributing 
+Please read [CONTRIBUTING.md](https://github.com/kiwihero/alecView/blob/master/CONTRIBUTING.md) for details on the process for pull requests.
 
 ## Sources
 Questions and Answers collected from various websites.
