@@ -7,7 +7,7 @@ bot = ChatBot('Alec',storage_adapter='chatterbot.storage.SQLStorageAdapter',
 )
 
 trainer = ChatterBotCorpusTrainer(bot)
-trainer.train('chatterbot.corpus.custom')
+trainer.train('chatterbot.corpus.jobs')
 
 while True:
     try:
