@@ -6,6 +6,12 @@ interview canidates.
 AlecView is an application for employees who work in human resources and
 designed to simulate a mock interview. 
 
+## Purpose 
+
+AlecView is designed to train new employees in human resources department. This application 
+will help new HR employees with the common interview questions and sample answers.
+The employee can give appropriate questions to the applicant. 
+
 ## Getting Started 
 For developement install chatterbot and make sure the correct python is present, update if needed. 
 To install the yml files, find the chatter-bot corpus location and add the jobs folder inside the data folder.
