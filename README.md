@@ -18,6 +18,7 @@ To install the yml files, find the chatter-bot corpus location and add the jobs 
 
 ## Built with:
 * python - language used 
+* flask - framework
 * [chatterbot](https://github.com/gunthercox/ChatterBot) - open source python library
 *  custom yml files for training
 
