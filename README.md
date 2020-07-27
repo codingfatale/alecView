@@ -22,6 +22,15 @@ To install the yml files, find the chatter-bot corpus location and add the jobs 
 * [chatterbot](https://github.com/gunthercox/ChatterBot) - open source python library
 *  custom yml files for training
 
+## Verisons
+* Web - built with flask and ChatterBot
+* Command Line - built using ChatterBot library, no GUI
+
+## Current Development
+Currently the project is working 
+on a chatbot that using ntlk and python
+instead of the Chatterbot Library. 
+
 ## Contributing 
 Please read [CONTRIBUTING.md](https://github.com/kiwihero/alecView/blob/master/CONTRIBUTING.md) for details on the process for pull requests.
 
