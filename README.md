@@ -22,7 +22,7 @@ To install the yml files, find the chatter-bot corpus location and add the jobs 
 * [chatterbot](https://github.com/gunthercox/ChatterBot) - open source python library
 *  custom yml files for training
 
-## Verisons
+## Versions
 * Web - built with flask and ChatterBot
 * Command Line - built using ChatterBot library, no GUI
 
