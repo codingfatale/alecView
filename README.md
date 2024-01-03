@@ -28,7 +28,8 @@ To install the yml files, find the chatter-bot corpus location and add the jobs 
 
 ## Current Development
 Currently the project is using the ChatGPT
-instead of the Chatterbot Library.
+instead of the Chatterbot Library. The project is going
+to be changed.
 
 ## Contributing 
 Please read [CONTRIBUTING.md](https://github.com/kiwihero/alecView/blob/master/CONTRIBUTING.md) for details on the process for pull requests.
