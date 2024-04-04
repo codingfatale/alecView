@@ -14,13 +14,13 @@ The employee can give appropriate questions to the applicant.
 
 ## Getting Started 
 For development install chatterbot and make sure the correct Python is present, update if needed. 
-To install the yml files, find the chatter-bot corpus location and add the jobs folder inside the data folder.
+To install the YAML files, find the chatter-bot corpus location and add the jobs folder inside the data folder.
 
 ## Built with:
 * python - the language used 
 * flask - framework
 * [chatterbot](https://github.com/gunthercox/ChatterBot) - open source python library
-*  custom yml files for training
+*  custom YAML files for training
 
 ## Versions
 * Web - built with Flask and ChatterBot
